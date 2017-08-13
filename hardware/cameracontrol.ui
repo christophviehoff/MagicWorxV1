@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Controller</class>
+ <widget class="QWidget" name="Controller">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1089</width>
+    <height>770</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Controller</string>
+  </property>
+  <widget class="QPushButton" name="pb_capture">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>730</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>capture</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="heartbeat">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>730</y>
+     <width>10</width>
+     <height>10</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#heartbeat{
+border-radius:12px}
+
+#heartbeat:enabled{
+background:orange}
+
+#heartbeat:!enabled{
+background:rgb(240, 240, 240)}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLCDNumber" name="lcd_update_time">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>730</y>
+     <width>64</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="smallDecimalPoint">
+    <bool>true</bool>
+   </property>
+   <property name="digitCount">
+    <number>4</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_live">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>730</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>document</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_update">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>730</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>update!</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>520</width>
+     <height>700</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>live Video</string>
+   </property>
+   <widget class="QLabel" name="videoFrame">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>480</width>
+      <height>640</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>video frame</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>20</y>
+     <width>520</width>
+     <height>700</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>snapshot--&gt; Gvision</string>
+   </property>
+   <widget class="QLabel" name="imageFrame">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>480</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>image frame</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="gcv_result">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>140</y>
+      <width>371</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Google Cloud Vision Results</string>
+    </property>
+   </widget>
+  </widget>
+  <zorder>groupBox</zorder>
+  <zorder>pb_capture</zorder>
+  <zorder>heartbeat</zorder>
+  <zorder>lcd_update_time</zorder>
+  <zorder>pb_live</zorder>
+  <zorder>pb_update</zorder>
+  <zorder>groupBox_2</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

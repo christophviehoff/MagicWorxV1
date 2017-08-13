@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Controller</class>
+ <widget class="QWidget" name="Controller">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>618</width>
+    <height>336</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Ejector</string>
+  </property>
+  <widget class="QComboBox" name="bin_selector">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>231</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Select a Bin.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>Bin0</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Bin1</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Bin2</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Bin3</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Bin4</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Bin5</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Bin6</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Bin7</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Bin8</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Bin9</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Bin10</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Bin11</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Bin12</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Bin13</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Bin14</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Bin15</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Bin16</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Bin17</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Bin19</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Bin20</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Bin21</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Bin22</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Bin23</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="pb_clear">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>280</y>
+     <width>171</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#pb_clear{
+border: 3px solid gray;
+border-radius:12px;
+background:white
+}</string>
+   </property>
+   <property name="text">
+    <string>clear</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+   <property name="autoExclusive">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="ejector_status">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>10</y>
+     <width>361</width>
+     <height>271</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Courier</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#led_status{
+border: 3px solid gray;
+border-radius:12px;
+background:rgb(255,255,127)}</string>
+   </property>
+   <property name="flow">
+    <enum>QListView::TopToBottom</enum>
+   </property>
+   <property name="batchSize">
+    <number>10</number>
+   </property>
+   <property name="currentRow">
+    <number>-1</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="heartbeat">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>320</y>
+     <width>10</width>
+     <height>10</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>heartbeat</string>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+#heartbeat {
+border-radius:2px}
+
+#heartbeat:enabled {
+background :grey}
+
+#heartbeat:!enabled {
+background: orange}
+
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_eject">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>50</y>
+     <width>111</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>13</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Single eject</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="led_ready">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>300</y>
+     <width>25</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>input green =on, red=off</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#led_ready{
+border-radius:12px}
+
+#led_ready:enabled{
+background :green}
+
+
+#led_ready:!enabled{
+background :red}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>300</y>
+     <width>61</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>ready</string>
+   </property>
+  </widget>
+  <widget class="QSlider" name="sliderA">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>190</y>
+     <width>231</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="minimum">
+    <number>150</number>
+   </property>
+   <property name="maximum">
+    <number>600</number>
+   </property>
+   <property name="value">
+    <number>150</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QSlider" name="sliderB">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>230</y>
+     <width>231</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="minimum">
+    <number>150</number>
+   </property>
+   <property name="maximum">
+    <number>600</number>
+   </property>
+   <property name="value">
+    <number>580</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_eject_test">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>50</y>
+     <width>111</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Sequence eject</string>
+   </property>
+  </widget>
+  <widget class="QLCDNumber" name="lcdNumber">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>250</y>
+     <width>64</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>sliderB</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>lcdNumber</receiver>
+   <slot>display(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>95</x>
+     <y>239</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>175</x>
+     <y>271</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

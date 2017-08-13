@@ -1,0 +1,263 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'bincontrol.ui'
+#
+# Created by: PyQt5 UI code generator 5.6
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_Controller(object):
+    def setupUi(self, Controller):
+        Controller.setObjectName("Controller")
+        Controller.setEnabled(True)
+        Controller.resize(635, 528)
+        self.bin_selector = QtWidgets.QComboBox(Controller)
+        self.bin_selector.setGeometry(QtCore.QRect(10, 10, 191, 31))
+        font = QtGui.QFont()
+        font.setPointSize(16)
+        self.bin_selector.setFont(font)
+        self.bin_selector.setObjectName("bin_selector")
+        self.bin_selector.addItem("")
+        self.bin_selector.addItem("")
+        self.bin_selector.addItem("")
+        self.bin_selector.addItem("")
+        self.bin_selector.addItem("")
+        self.bin_selector.addItem("")
+        self.bin_selector.addItem("")
+        self.bin_selector.addItem("")
+        self.bin_selector.addItem("")
+        self.bin_selector.addItem("")
+        self.bin_selector.addItem("")
+        self.bin_selector.addItem("")
+        self.bin_selector.addItem("")
+        self.bin_selector.addItem("")
+        self.bin_selector.addItem("")
+        self.bin_selector.addItem("")
+        self.bin_selector.addItem("")
+        self.bin_selector.addItem("")
+        self.bin_selector.addItem("")
+        self.bin_selector.addItem("")
+        self.bin_selector.addItem("")
+        self.bin_selector.addItem("")
+        self.bin_selector.addItem("")
+        self.bin_selector.addItem("")
+        self.controls_group = QtWidgets.QGroupBox(Controller)
+        self.controls_group.setEnabled(True)
+        self.controls_group.setGeometry(QtCore.QRect(130, 50, 71, 471))
+        self.controls_group.setObjectName("controls_group")
+        self.pb_to_top = QtWidgets.QPushButton(self.controls_group)
+        self.pb_to_top.setGeometry(QtCore.QRect(10, 30, 51, 51))
+        self.pb_to_top.setCheckable(False)
+        self.pb_to_top.setChecked(False)
+        self.pb_to_top.setAutoRepeat(False)
+        self.pb_to_top.setAutoExclusive(True)
+        self.pb_to_top.setDefault(False)
+        self.pb_to_top.setFlat(False)
+        self.pb_to_top.setObjectName("pb_to_top")
+        self.pb_up = QtWidgets.QPushButton(self.controls_group)
+        self.pb_up.setGeometry(QtCore.QRect(10, 90, 51, 51))
+        self.pb_up.setCheckable(False)
+        self.pb_up.setAutoRepeat(False)
+        self.pb_up.setAutoExclusive(True)
+        self.pb_up.setObjectName("pb_up")
+        self.pb_cycle = QtWidgets.QPushButton(self.controls_group)
+        self.pb_cycle.setGeometry(QtCore.QRect(10, 150, 51, 51))
+        self.pb_cycle.setCheckable(False)
+        self.pb_cycle.setChecked(False)
+        self.pb_cycle.setAutoRepeat(False)
+        self.pb_cycle.setAutoExclusive(True)
+        self.pb_cycle.setObjectName("pb_cycle")
+        self.pb_down = QtWidgets.QPushButton(self.controls_group)
+        self.pb_down.setGeometry(QtCore.QRect(10, 350, 51, 51))
+        self.pb_down.setCheckable(False)
+        self.pb_down.setAutoRepeat(False)
+        self.pb_down.setAutoExclusive(True)
+        self.pb_down.setObjectName("pb_down")
+        self.pb_stop = QtWidgets.QPushButton(self.controls_group)
+        self.pb_stop.setGeometry(QtCore.QRect(10, 290, 51, 51))
+        self.pb_stop.setCheckable(False)
+        self.pb_stop.setChecked(False)
+        self.pb_stop.setAutoRepeat(False)
+        self.pb_stop.setAutoExclusive(True)
+        self.pb_stop.setObjectName("pb_stop")
+        self.pb_to_bottom = QtWidgets.QPushButton(self.controls_group)
+        self.pb_to_bottom.setGeometry(QtCore.QRect(10, 410, 51, 51))
+        self.pb_to_bottom.setCheckable(False)
+        self.pb_to_bottom.setChecked(False)
+        self.pb_to_bottom.setAutoRepeat(False)
+        self.pb_to_bottom.setAutoExclusive(True)
+        self.pb_to_bottom.setObjectName("pb_to_bottom")
+        self.pb_e_stop = QtWidgets.QPushButton(self.controls_group)
+        self.pb_e_stop.setGeometry(QtCore.QRect(10, 220, 51, 51))
+        self.pb_e_stop.setStyleSheet("\n"
+"\n"
+"#pb_e_stop{\n"
+"background:rgb(255, 0, 0);\n"
+"\n"
+"font: 10pt \"Consolas\";\n"
+"\n"
+"border-radius:18px}\n"
+"")
+        self.pb_e_stop.setCheckable(False)
+        self.pb_e_stop.setChecked(False)
+        self.pb_e_stop.setAutoRepeat(False)
+        self.pb_e_stop.setAutoExclusive(True)
+        self.pb_e_stop.setObjectName("pb_e_stop")
+        self.sensor_group = QtWidgets.QGroupBox(Controller)
+        self.sensor_group.setGeometry(QtCore.QRect(10, 50, 111, 471))
+        self.sensor_group.setObjectName("sensor_group")
+        self.lcd_top_limit_sns = QtWidgets.QLCDNumber(self.sensor_group)
+        self.lcd_top_limit_sns.setGeometry(QtCore.QRect(10, 70, 51, 31))
+        self.lcd_top_limit_sns.setDigitCount(1)
+        self.lcd_top_limit_sns.setObjectName("lcd_top_limit_sns")
+        self.lcd_high_limit_sns = QtWidgets.QLCDNumber(self.sensor_group)
+        self.lcd_high_limit_sns.setGeometry(QtCore.QRect(10, 30, 51, 31))
+        self.lcd_high_limit_sns.setDigitCount(1)
+        self.lcd_high_limit_sns.setObjectName("lcd_high_limit_sns")
+        self.lcd_low_limit_sns = QtWidgets.QLCDNumber(self.sensor_group)
+        self.lcd_low_limit_sns.setGeometry(QtCore.QRect(10, 420, 51, 31))
+        self.lcd_low_limit_sns.setDigitCount(1)
+        self.lcd_low_limit_sns.setObjectName("lcd_low_limit_sns")
+        self.lcd_bin_level_sns = QtWidgets.QLCDNumber(self.sensor_group)
+        self.lcd_bin_level_sns.setGeometry(QtCore.QRect(10, 160, 51, 31))
+        self.lcd_bin_level_sns.setDigitCount(5)
+        self.lcd_bin_level_sns.setObjectName("lcd_bin_level_sns")
+        self.bar_bin_level = QtWidgets.QProgressBar(self.sensor_group)
+        self.bar_bin_level.setGeometry(QtCore.QRect(70, 90, 25, 331))
+        self.bar_bin_level.setMaximum(5650)
+        self.bar_bin_level.setProperty("value", 5650)
+        self.bar_bin_level.setOrientation(QtCore.Qt.Vertical)
+        self.bar_bin_level.setInvertedAppearance(False)
+        self.bar_bin_level.setTextDirection(QtWidgets.QProgressBar.BottomToTop)
+        self.bar_bin_level.setObjectName("bar_bin_level")
+        self.led_high_limit_sns = QtWidgets.QPushButton(self.sensor_group)
+        self.led_high_limit_sns.setGeometry(QtCore.QRect(70, 30, 25, 25))
+        self.led_high_limit_sns.setStyleSheet("#led_high_limit_sns:enabled{\n"
+"background:green}\n"
+"\n"
+"#led_high_limit_sns:!enabled{\n"
+"background:red}")
+        self.led_high_limit_sns.setText("")
+        self.led_high_limit_sns.setObjectName("led_high_limit_sns")
+        self.led_low_limit_sns = QtWidgets.QPushButton(self.sensor_group)
+        self.led_low_limit_sns.setEnabled(False)
+        self.led_low_limit_sns.setGeometry(QtCore.QRect(70, 430, 25, 25))
+        self.led_low_limit_sns.setStyleSheet("#led_low_limit_sns:enabled{\n"
+"background:green}\n"
+"\n"
+"#led_low_limit_sns:!enabled{\n"
+"background:red}")
+        self.led_low_limit_sns.setText("")
+        self.led_low_limit_sns.setObjectName("led_low_limit_sns")
+        self.led_top_limit_sns = QtWidgets.QPushButton(self.sensor_group)
+        self.led_top_limit_sns.setEnabled(False)
+        self.led_top_limit_sns.setGeometry(QtCore.QRect(70, 60, 25, 25))
+        self.led_top_limit_sns.setStyleSheet("#led_top_limit_sns:enabled{\n"
+"background:green}\n"
+"\n"
+"#led_top_limit_sns:!enabled{\n"
+"background:red}")
+        self.led_top_limit_sns.setText("")
+        self.led_top_limit_sns.setObjectName("led_top_limit_sns")
+        self.status_group = QtWidgets.QGroupBox(Controller)
+        self.status_group.setEnabled(True)
+        self.status_group.setGeometry(QtCore.QRect(210, 50, 411, 471))
+        self.status_group.setObjectName("status_group")
+        self.bin_status = QtWidgets.QListWidget(self.status_group)
+        self.bin_status.setGeometry(QtCore.QRect(10, 30, 391, 381))
+        font = QtGui.QFont()
+        font.setFamily("Courier")
+        font.setPointSize(8)
+        self.bin_status.setFont(font)
+        self.bin_status.setStyleSheet("#bin_status{\n"
+"border: 3px solid gray;\n"
+"border-radius:12px;\n"
+"background:rgb(255,255,127)}")
+        self.bin_status.setFlow(QtWidgets.QListView.TopToBottom)
+        self.bin_status.setBatchSize(10)
+        self.bin_status.setObjectName("bin_status")
+        self.pb_clear = QtWidgets.QPushButton(self.status_group)
+        self.pb_clear.setGeometry(QtCore.QRect(10, 410, 171, 51))
+        self.pb_clear.setStyleSheet("#pb_clear{\n"
+"border: 3px solid gray;\n"
+"border-radius:12px;\n"
+"background:white\n"
+"}")
+        self.pb_clear.setCheckable(True)
+        self.pb_clear.setChecked(False)
+        self.pb_clear.setAutoRepeat(False)
+        self.pb_clear.setAutoExclusive(True)
+        self.pb_clear.setObjectName("pb_clear")
+        self.heartbeat = QtWidgets.QPushButton(self.status_group)
+        self.heartbeat.setEnabled(True)
+        self.heartbeat.setGeometry(QtCore.QRect(380, 450, 10, 10))
+        self.heartbeat.setStyleSheet("#heartbeat{\n"
+"border-radius:12px}\n"
+"\n"
+"#heartbeat:enabled{\n"
+"background:orange}\n"
+"\n"
+"#heartbeat:!enabled{\n"
+"background:rgb(240, 240, 240)}")
+        self.heartbeat.setText("")
+        self.heartbeat.setObjectName("heartbeat")
+        self.power_on = QtWidgets.QCheckBox(Controller)
+        self.power_on.setEnabled(True)
+        self.power_on.setGeometry(QtCore.QRect(220, 20, 121, 17))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.power_on.setFont(font)
+        self.power_on.setChecked(True)
+        self.power_on.setObjectName("power_on")
+        self.status_group.raise_()
+        self.sensor_group.raise_()
+        self.controls_group.raise_()
+        self.bin_selector.raise_()
+        self.power_on.raise_()
+
+        self.retranslateUi(Controller)
+        self.bin_status.setCurrentRow(-1)
+        QtCore.QMetaObject.connectSlotsByName(Controller)
+
+    def retranslateUi(self, Controller):
+        _translate = QtCore.QCoreApplication.translate
+        Controller.setWindowTitle(_translate("Controller", "Controller"))
+        self.bin_selector.setItemText(0, _translate("Controller", "Bin0"))
+        self.bin_selector.setItemText(1, _translate("Controller", "Bin1"))
+        self.bin_selector.setItemText(2, _translate("Controller", "Bin2"))
+        self.bin_selector.setItemText(3, _translate("Controller", "Bin3"))
+        self.bin_selector.setItemText(4, _translate("Controller", "Bin4"))
+        self.bin_selector.setItemText(5, _translate("Controller", "Bin5"))
+        self.bin_selector.setItemText(6, _translate("Controller", "Bin6"))
+        self.bin_selector.setItemText(7, _translate("Controller", "Bin7"))
+        self.bin_selector.setItemText(8, _translate("Controller", "Bin8"))
+        self.bin_selector.setItemText(9, _translate("Controller", "Bin9"))
+        self.bin_selector.setItemText(10, _translate("Controller", "Bin10"))
+        self.bin_selector.setItemText(11, _translate("Controller", "Bin11"))
+        self.bin_selector.setItemText(12, _translate("Controller", "Bin12"))
+        self.bin_selector.setItemText(13, _translate("Controller", "Bin13"))
+        self.bin_selector.setItemText(14, _translate("Controller", "Bin14"))
+        self.bin_selector.setItemText(15, _translate("Controller", "Bin15"))
+        self.bin_selector.setItemText(16, _translate("Controller", "Bin16"))
+        self.bin_selector.setItemText(17, _translate("Controller", "Bin17"))
+        self.bin_selector.setItemText(18, _translate("Controller", "Bin18"))
+        self.bin_selector.setItemText(19, _translate("Controller", "Bin19"))
+        self.bin_selector.setItemText(20, _translate("Controller", "Bin20"))
+        self.bin_selector.setItemText(21, _translate("Controller", "Bin21"))
+        self.bin_selector.setItemText(22, _translate("Controller", "Bin22"))
+        self.bin_selector.setItemText(23, _translate("Controller", "Bin23"))
+        self.controls_group.setTitle(_translate("Controller", "Controls"))
+        self.pb_to_top.setText(_translate("Controller", "top"))
+        self.pb_up.setText(_translate("Controller", "jog up"))
+        self.pb_cycle.setText(_translate("Controller", "cycle"))
+        self.pb_down.setText(_translate("Controller", "jog dn"))
+        self.pb_stop.setText(_translate("Controller", "stop"))
+        self.pb_to_bottom.setText(_translate("Controller", "bottom"))
+        self.pb_e_stop.setText(_translate("Controller", "E-STOP"))
+        self.sensor_group.setTitle(_translate("Controller", "Sensors"))
+        self.status_group.setTitle(_translate("Controller", "Status"))
+        self.pb_clear.setText(_translate("Controller", "clear"))
+        self.power_on.setText(_translate("Controller", "Power ON"))
+

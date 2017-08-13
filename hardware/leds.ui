@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Controller</class>
+ <widget class="QWidget" name="Controller">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>619</width>
+    <height>219</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>led display</string>
+  </property>
+  <widget class="QGroupBox" name="inputsP0">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>60</y>
+     <width>271</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>input green =on, red=off</string>
+   </property>
+   <property name="title">
+    <string>  Inputs P0.0 - 0.7</string>
+   </property>
+   <widget class="QPushButton" name="led_7">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>30</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>input bit 7</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#led_7{
+border-radius:12px}
+
+#led_7:enabled{
+background :green}
+
+
+#led_7:!enabled{
+background :red}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="led_6">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>30</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>input bit 6</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#led_6{
+border-radius:12px}
+
+#led_6:enabled{
+background :green}
+
+
+#led_6:!enabled{
+background :red}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="led_4">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>30</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>input bit 4</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#led_4{
+border-radius:12px}
+
+#led_4:enabled{
+background :green}
+
+
+#led_4:!enabled{
+background :red}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="led_0">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>input green =on, red=off</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#led_0{
+border-radius:12px}
+
+#led_0:enabled{
+background :green}
+
+
+#led_0:!enabled{
+background :red}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="led_1">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>30</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>input bit 1</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#led_1{
+border-radius:12px}
+
+#led_1:enabled{
+background :green}
+
+
+#led_1:!enabled{
+background :red}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="led_2">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>30</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>input bit 2</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#led_2{
+border-radius:12px}
+
+#led_2:enabled{
+background :green}
+
+
+#led_2:!enabled{
+background :red}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="led_3">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>30</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>input bit 3</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#led_3{
+border-radius:12px}
+
+#led_3:enabled{
+background :green}
+
+
+#led_3:!enabled{
+background :red}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="led_5">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>30</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>input bit 5</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#led_5{
+border-radius:12px}
+
+#led_5:enabled{
+background :green}
+
+
+#led_5:!enabled{
+background :red}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>led_7</zorder>
+   <zorder>led_6</zorder>
+   <zorder>led_4</zorder>
+   <zorder>led_1</zorder>
+   <zorder>led_2</zorder>
+   <zorder>led_3</zorder>
+   <zorder>led_5</zorder>
+   <zorder>led_0</zorder>
+  </widget>
+  <widget class="QGroupBox" name="inputsP1">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>140</y>
+     <width>271</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>outputs green=on, red=off</string>
+   </property>
+   <property name="title">
+    <string>  Inputs P1.0 - 1.7</string>
+   </property>
+   <widget class="QPushButton" name="led_9">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>30</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>input bit 3</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#led_9{
+border-radius:12px}
+
+#led_9:enabled{
+background :green}
+
+
+#led_9:!enabled{
+background :red}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="led_10">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>30</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>input bit 5</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#led_10{
+border-radius:12px}
+
+#led_10:enabled{
+background :green}
+
+
+#led_10:!enabled{
+background :red}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="led_11">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>30</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>input bit 1</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#led_11{
+border-radius:12px}
+
+#led_11:enabled{
+background :green}
+
+
+#led_11:!enabled{
+background :red}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="led_12">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>30</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>input bit 6</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#led_12{
+border-radius:12px}
+
+#led_12:enabled{
+background :green}
+
+
+#led_12:!enabled{
+background :red}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="led_13">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>30</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>input bit 7</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#led_13{
+border-radius:12px}
+
+#led_13:enabled{
+background :green}
+
+
+#led_13:!enabled{
+background :red}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="led_14">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>30</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>input bit 4</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#led_14{
+border-radius:12px}
+
+#led_14:enabled{
+background :green}
+
+
+#led_14:!enabled{
+background :red}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="led_15">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>30</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>input green =on, red=off</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#led_15{
+border-radius:12px}
+
+#led_15:enabled{
+background :green}
+
+
+#led_15:!enabled{
+background :red}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="led_8">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>input bit 2</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#led_8{
+border-radius:12px}
+
+#led_8:enabled{
+background :green}
+
+
+#led_8:!enabled{
+background :red}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QComboBox" name="input_selector">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>271</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="toolTip">
+    <string>input green =on, red=off</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>0x20</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>0x21</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>0x22</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>0x23</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>0x24</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>0x25</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="heartbeat">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>200</y>
+     <width>10</width>
+     <height>10</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>heartbeat</string>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+#heartbeat {
+border-radius:2px}
+
+#heartbeat:enabled {
+background :yellow}
+
+#heartbeat:!enabled {
+background: orange}
+
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="led_status">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>20</y>
+     <width>311</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Courier</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#led_status{
+border: 3px solid gray;
+border-radius:12px;
+background:rgb(255,255,127)}</string>
+   </property>
+   <property name="flow">
+    <enum>QListView::TopToBottom</enum>
+   </property>
+   <property name="batchSize">
+    <number>10</number>
+   </property>
+   <property name="currentRow">
+    <number>-1</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_clear">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>160</y>
+     <width>171</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#pb_clear{
+border: 3px solid gray;
+border-radius:12px;
+background:white
+}</string>
+   </property>
+   <property name="text">
+    <string>clear</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+   <property name="autoExclusive">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <zorder>inputsP1</zorder>
+  <zorder>inputsP0</zorder>
+  <zorder>input_selector</zorder>
+  <zorder>heartbeat</zorder>
+  <zorder>led_status</zorder>
+  <zorder>pb_clear</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
